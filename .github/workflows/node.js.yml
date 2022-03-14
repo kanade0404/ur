@@ -5,14 +5,20 @@ name: Node.js CI
 
 on:
   push:
-    branches: [ master ]
   pull_request:
     branches: [ master ]
+    paths:
+      - "scraper/**"
+      - ".github/workflows/node.js.yml"
 
 jobs:
   build:
-
+  
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash
+        working-directory: scraper
 
     strategy:
       matrix:
