@@ -1,0 +1,14 @@
+version: "3.8"
+services:
+  api:
+    container_name: ur_scraper
+    build:
+      dockerfile: docker/dev/Dockerfile
+      context: .
+    tty: true
+    ports:
+      - "54000:3000"
+    volumes:
+      - type: bind
+        source: .
+        target: /api
