@@ -10,3 +10,5 @@ ps:
 	docker compose ps
 log:
 	docker compose logs api
+exec:
+	docker compose exec api bash

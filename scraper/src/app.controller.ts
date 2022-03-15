@@ -11,6 +11,6 @@ export class AppController {
   }
   @Post()
   startCrawl(): Promise<string> {
-    return this.appService.getUR()
+    return this.appService.getUR();
   }
 }
