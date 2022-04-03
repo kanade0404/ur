@@ -1,5 +1,6 @@
 import { Controller, Get, Post } from '@nestjs/common';
 import { AppService } from './app.service';
+import { Property } from './getPropertyInfo';
 
 @Controller()
 export class AppController {
@@ -10,7 +11,7 @@ export class AppController {
     return this.appService.getHello();
   }
   @Post()
-  startCrawl(): Promise<string> {
+  startCrawl(): Promise<Property[]> {
     return this.appService.getUR();
   }
 }
