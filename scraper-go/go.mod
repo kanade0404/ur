@@ -3,7 +3,7 @@ module scraper-go
 go 1.18
 
 require (
-	github.com/chromedp/cdproto v0.0.0-20220502031443-5b35e6c7c793
+	github.com/chromedp/cdproto v0.0.0-20220515234810-83d799542a04
 	github.com/chromedp/chromedp v0.8.1
 	github.com/deckarep/golang-set v1.8.0
 )
